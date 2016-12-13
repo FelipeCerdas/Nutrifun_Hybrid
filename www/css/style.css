@@ -1,0 +1,46 @@
+/* Empty. Add your own CSS if you like */
+
+/*home_page*/
+.contentBox{
+  background-image: url("../img/background.jpg");
+}
+
+.imglogo{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.appName{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.appNameh1{
+  color: white;
+}
+
+.loginButtonContainer{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.recoverPasswordContainer{
+  margin-top: 10px;
+  text-align: right;
+  margin-right: 20px;
+  color: white;
+}
+
+.recoverPasswordText{
+  color: white;
+}
+/*register_page*/
+.registerLogoContainer{
+  text-align: center;
+}
+
+.registerLogoContainer h1{
+  color: white;
+}

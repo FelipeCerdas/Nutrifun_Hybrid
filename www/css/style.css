@@ -6,19 +6,25 @@
 }
 
 .imglogo{
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   color: white;
 }
 
+.imglogo img{
+  height: 80px;
+  width: 80px;
+}
+
 .appName{
-  margin-top: 50px;
+  margin-top: 5px;
   text-align: center;
   color: white;
 }
 
 .appNameh1{
   color: white;
+  font-size: 70px;
 }
 
 .loginButtonContainer{
@@ -26,8 +32,19 @@
   text-align: center;
 }
 
+.inputLogin{
+  background-color: transparent;
+  color: white;
+}
+
+.buttonlogin{
+  color: white;
+  font-size: 26px;
+}
+
 .recoverPasswordContainer{
-  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: right;
   margin-right: 20px;
   color: white;
@@ -39,6 +56,12 @@
 /*register_page*/
 .registerLogoContainer{
   text-align: center;
+  margin-bottom: -30px;
+}
+
+.registerLogoContainer img{
+  height: 80px;
+  width: 80px;
 }
 
 .registerLogoContainer h1{

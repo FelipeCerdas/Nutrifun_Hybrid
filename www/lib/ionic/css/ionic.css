@@ -5705,6 +5705,18 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   border-width: 1px;
   border-style: solid;
   font-size: 16px; }
+.itemTrans {
+  border-bottom-color: #ddd;
+  background-color: transparent;
+  color: transparent;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 36px; }
   .item h2 {
     margin: 0 0 2px 0;
     font-size: 16px;
@@ -7738,7 +7750,7 @@ input[type="color"] {
   padding-top: 2px;
   padding-left: 0;
   height: 34px;
-  color: #111;
+  /*color: #111;*/
   vertical-align: middle;
   font-size: 14px;
   line-height: 16px; }
@@ -8573,7 +8585,7 @@ progress {
 .button {
   border-color: transparent;
   background-color: #f8f8f8;
-  color: #444;
+  /*color: #444;*/
   position: relative;
   display: inline-block;
   margin: 0;
@@ -8586,7 +8598,7 @@ progress {
   vertical-align: top;
   text-align: center;
   text-overflow: ellipsis;
-  font-size: 16px;
+  /*font-size: 16px;*/
   line-height: 42px;
   cursor: pointer; }
   .button:hover {
@@ -8781,10 +8793,10 @@ progress {
         color: #fff; }
   .button.button-energized {
     border-color: transparent;
-    background-color: #ffc900;
-    color: #fff; }
-    .button.button-energized:hover {
-      color: #fff;
+    background-color: rgb(230, 255, 19);
+    background: linear-gradient(rgb(255, 148, 14), #ff6014);
+    /*.button.button-energized:hover {
+      color: #fff;*/
       text-decoration: none; }
     .button.button-energized.active, .button.button-energized.activated {
       border-color: #a2a2a2;
@@ -8798,9 +8810,9 @@ progress {
       border-color: transparent;
       background: none; }
     .button.button-energized.button-outline {
-      border-color: #ffc900;
+      border-color: rgb(255, 148, 14);
       background: transparent;
-      color: #ffc900; }
+      color: white; }
       .button.button-energized.button-outline.active, .button.button-energized.button-outline.activated {
         background-color: #ffc900;
         box-shadow: none;

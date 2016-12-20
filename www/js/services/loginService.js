@@ -4,8 +4,8 @@ app.service('LoginService', function ($state, $rootScope, $http) {
 
           //tramas de prueba
           var data = {
-            userName:"pipe",
-            password:"12345"
+            userName:"1",
+            password:"1"
           };
 
           if(username_ == data.userName && password_ == data.password){

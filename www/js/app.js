@@ -8,6 +8,7 @@
 var app = angular.module('starter', ['ionic', 'app.routes']);
 
 app.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.tabs.position('bottom');
     $ionicConfigProvider.platform.android.scrolling.jsScrolling(true);
 })
 

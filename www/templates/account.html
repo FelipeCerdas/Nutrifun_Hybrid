@@ -1,0 +1,38 @@
+<ion-view view-title="Account">
+  <div class="bar bar-positive bar-header">
+    <button ng-click="goBack()" class="button button-clear icon ion-android-arrow-back"></button>
+    <h1 class="title bartitle">Nutrifun</h1>
+  </div>
+  <div class="imgContainer">
+    <img src="img/account.png" class="accountLogo">
+  </div>
+  <ion-content class="no-padding" style="margin-top:180px;">
+    <div class="list" style="padding-left: 30px;padding-right:30px;">
+      <label class="itemTrans1 item-input">
+        <i class="icon ion-ios-person-outline placeholder-icon1"></i>
+        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Usuario" ng-model="user.username">
+      </label>
+      <label class="itemTrans1 item-input">
+        <i class="icon ion-person-add placeholder-icon1"></i>
+        <input style="margin-left: 20px;" class="inputAccount"  type="text" placeholder="Nombre" ng-model="user.name">
+      </label>
+      <label class="itemTrans1 item-input">
+        <i class="icon ion-person-add placeholder-icon1"></i>
+        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Apellidos" ng-model="user.lastname">
+      </label>
+      <label class="itemTrans1 item-input">
+        <i class="icon ion-ios-email-outline placeholder-icon1"></i>
+        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Email" ng-model="user.email">
+      </label>
+      <label class="itemTrans1 item-input">
+        <i class="icon ion-ios-locked-outline placeholder-icon1"></i>
+        <input style="margin-left: 20px;" class="inputAccount" type="password" placeholder="Contrasena" ng-model="user.password">
+      </label>
+    </div>
+    <div class="loginButtonContainer" style="padding-left: 30px; padding-right: 30px; margin-top: 50px;">
+      <button class="button button-block button-energized buttonlogin" ng-click="save()">
+        Guardar Cambios
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

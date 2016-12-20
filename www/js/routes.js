@@ -24,6 +24,15 @@ angular.module('app.routes', [])
 	        authenticate: false
 	    }
   })
+  .state('account', {
+        url: '/account',
+        cache: false,
+        templateUrl: 'templates/account.html',
+        controller: 'AccountCtrl',
+        data: {
+	        authenticate: false
+	    }
+  })
   .state('tab', {
     url: '/tab',
     abstract: true,

@@ -23,6 +23,46 @@
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+
+/*iconos personalizados*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?f6o4o9');
+  src:  url('../fonts/icomoon.eot?f6o4o9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f6o4o9') format('truetype'),
+    url('../fonts/icomoon.woff?f6o4o9') format('woff'),
+    url('../fonts/icomoon.svg?f6o4o9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  display: inline-block;
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon_search_black:before {
+  content: "\e900";
+}
+.icon-icon_recipe_black:before {
+  content: "\e901";
+}
+.icon-icon_home_black:before {
+  content: "\e902";
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 @font-face {
   font-family: "Ionicons";
   src: url("../fonts/ionicons.eot?v=2.0.1");

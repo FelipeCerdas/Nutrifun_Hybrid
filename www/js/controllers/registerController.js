@@ -37,7 +37,7 @@ app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilS
       if(res) {
         RegisterService.registerUser($scope.user);
       } else {
-
+          //no hace nada
       }
     });
   };

@@ -1,12 +1,15 @@
 <ion-view title="Login" hide-nav-bar="true" id="pageLogin" class="loginForm">
   <ion-content padding="" class="contentBox">
-    <div class="imglogo" id="">
+    <div class="imglogo animated zoomIn" id="">
       <img src="img/logoapp.png" alt="">
     </div>
-    <div class="appName" id="">
+    <div class="appName animated fadeInUp" id="">
       <h1 class="appNameh1">Nutrifun</h1>
     </div>
-    <div class="list" style="padding-left: 30px; padding-right: 30px;">
+    <div id="spinner" class="centerContent animated bounceIn" style="padding: 47px;">
+      <ion-spinner icon="lines" class="spinner-stable"></ion-spinner>
+    </div>
+    <div id="inputContainer" class="list animated bounceIn" style="padding-left: 30px; padding-right: 30px;">
       <label class="itemTrans item-input">
         <i class="icon ion-ios-person-outline placeholder-icon"></i>
         <input class="inputLogin" type="text" placeholder="Usuario" ng-model="user.username">
@@ -16,21 +19,21 @@
         <input class="inputLogin" type="password" placeholder="Contrasena" ng-model="user.password">
       </label>
     </div>
-    <div class="loginButtonContainer" style="padding-left: 30px; padding-right: 30px; margin-bottom:20px; margin-top:30px;">
+    <div id="loginbtn" class="loginButtonContainer animated fadeInRight" style="padding-left: 30px; padding-right: 30px; margin-bottom:20px; margin-top:30px;">
       <button class="button button-block button-energized buttonlogin" ng-click="login()">
         Iniciar Sesion
       </button>
     </div>
-    <div class="loginButtonContainer" style="padding-left: 30px; padding-right: 30px;">
+    <div id="regbtn" class="loginButtonContainer animated fadeInLeft" style="padding-left: 30px; padding-right: 30px;">
       <button class="button button-block button-outline button-energized buttonlogin" ng-click="register()">
         Registrarme
       </button>
     </div>
-    <div class="recoverPasswordContainer">
+    <div class="recoverPasswordContainer animated zoomIn">
         <h3 class="recoverPasswordText">¿Olvide mi contraseña?</h3>
     </div>
   </ion-content>
-  <div class="bar bar-footer bar-clear">
+  <div class="bar bar-footer bar-clear animated rubberBand">
     <h5 class="title footerText">Aplicacion desarrollada por APPStions</h5>
   </div>
 </ion-view>

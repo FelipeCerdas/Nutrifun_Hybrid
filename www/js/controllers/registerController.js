@@ -1,5 +1,6 @@
 app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilService) {
   //variable objeto que se actualiza con los campos que se completan en la vista
+  $('#spinner2').hide();
   $scope.user = {
     username : '',
     name : '',
@@ -35,8 +36,6 @@ app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilS
     confirmPopup.then(function(res) {
       if(res) {
         RegisterService.registerUser($scope.user);
-        UtilService.showAlert("Exito","Usuario Guardado Correctamente");
-        window.history.back();
       } else {
 
       }

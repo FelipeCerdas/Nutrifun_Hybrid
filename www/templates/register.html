@@ -1,12 +1,16 @@
 <ion-view title="register" hide-nav-bar="true" id="register" class="registerForm">
   <ion-content padding="" class="contentBox">
     <div class="">
-      <button ng-click="goBack()" class="button button-clear button-light icon ion-chevron-left">Atras</button>
+      <button ng-click="goBack()" style="font-size: 24px;    margin-left: -10px;" class="button button-clear button-light icon ion-chevron-left">
+        <span class="" style="position: absolute;    margin-left: 3px;    top: 0;">
+          Atras
+        </span>
+      </button>
     </div>
-    <div class="registerLogoContainer">
+    <div class="registerLogoContainer animated fadeInDown">
       <i class="icon ion-person-add placeholder-icon"></i>
     </div>
-    <div class="list" style="padding: 30px;">
+    <div class="list animated flipInX" style="padding: 30px;">
       <label class="itemTrans item-input">
         <i class="icon ion-ios-person-outline placeholder-icon"></i>
         <input  class="inputLogin" type="text" placeholder="Usuario" ng-model="user.username">
@@ -28,10 +32,13 @@
         <input  class="inputLogin" type="password" placeholder="Contrasena" ng-model="user.password">
       </label>
     </div>
-    <div class="loginButtonContainer" style="padding-left: 30px; padding-right: 30px;">
+    <div id="registerbtn" class="loginButtonContainer animated zoomIn" style="padding-left: 30px; padding-right: 30px;">
       <button class="button button-block button-energized buttonlogin" ng-click="register()">
         Crear Cuenta
       </button>
+    </div>
+    <div id="spinner2" class="centerContent animated zoomIn" style="padding: 47px;">
+      <ion-spinner icon="lines" class="spinner-stable"></ion-spinner>
     </div>
   </ion-content>
   <div class="bar bar-footer bar-clear">

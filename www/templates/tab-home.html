@@ -1,8 +1,8 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Home">
   <div class="bar bar-positive bar-header">
     <!-- <button class="button button-clear icon ion-ios-search-strong"></button> -->
     <h1 class="title bartitle">Nutrifun</h1>
-    <div class="list" id="options" style="position: absolute; right: 5px; top:7px;">
+    <div hidden="hidden" class="list" id="options" style="position: absolute; right: 5px; top:7px;">
       <div class="item item-divider" ng-click="showOptions()">
         Opciones
       </div>
@@ -16,9 +16,15 @@
     <button ng-click="showOptions()" class="button button-clear icon ion-android-more-vertical" style="position:absolute; right:5px;"></button>
   </div>
   <ion-content class="padding has-header">
+    <ion-list can-swipe="listCanSwipe" ng-init="getRecipes()">
 
-    <ion-list can-swipe="listCanSwipe">
-      <div class="eachItem">
+      <div id="noRecipes" class="card animated fadeInDownBig">
+        <div class="item item-text-wrap">
+          Recetas no agregadas :( - Pulsa el boton de agregar :)
+        </div>
+      </div>
+
+      <div class="eachItem animated bounceIn" ng-repeat="recipe in recipes" >
         <ion-item class="list" style="background-color:#f5f5f5;">
             <div class="row">
               <div class="col col-20 centerContent">
@@ -27,61 +33,25 @@
               </div>
               <div class="col centerContent">
                 <div class="row">
-                  Arroz con pollo
+                  {{recipe.name}}
                 </div>
                 <div class="row" style="color: rgb(169, 169, 169);">
-                  12/08/2016
+                  {{recipe.name}}
                 </div>
               </div>
               <div class="col col-20 centerContent"  style="position: fixed; right: 4%;">
-                <button id="btnPri" ng-click="showEditOptions()"
+                <button id="btnPri"
                 style="font-size: 45px;" class="button button-assertive button-clear icon ion-chevron-left"></button>
               </div>
             </div>
-          <ion-option-button style="font-size:30px;" class="button-positive icon icon-light ion-edit" ng-click="editRecipe()"></ion-option-button>
-          <ion-option-button style="font-size:30px;" class="button-assertive icon icon-light ion-trash-b" ng-click="deleteRecipe()"></ion-option-button>
+          <ion-option-button style="font-size:30px;" class="button-positive icon icon-light ion-edit" ng-click="editRecipe(recipe.idRecipe)"></ion-option-button>
+          <ion-option-button style="font-size:30px;" class="button-assertive icon icon-light ion-trash-b" ng-click="deleteRecipe(recipe.idRecipe)"></ion-option-button>
         </ion-item>
         <div class="item item-text-wrap" style="margin-top:-22px;">
-          Esta receta tiene descripcion de poder seguir adelante, logralo.
+          {{recipe.description}}
         </div>
       </div>
     </ion-list>
-
-    <!-- <div class="card">
-      <div class="item item-divider">
-        <div class="row">
-          <div class="col col-20 centerContent">
-            <i class="icon ion-fork" style="font-size: 50px;"></i>
-            <i class="icon ion-knife" style="font-size: 50px;"></i>
-          </div>
-          <div class="col centerContent">
-            <div class="row">
-              Arroz con pollo
-            </div>
-            <div class="row" style="color: rgb(169, 169, 169);">
-              12/08/2016
-            </div>
-          </div>
-          <div class="col col-20 centerContent">
-            <button id="btnPri" ng-click="showEditOptions()"
-            style="font-size: 45px;" class="button button-assertive button-clear icon ion-grid"></button> -->
-            <!-- <button ng-click="showEditOptions()"
-            id="btnAlt" style="font-size: 45px;" class="button button-assertive icon ion-grid"></button> -->
-          <!-- </div>
-        </div>
-      </div> -->
-      <!-- <div ng-click="editRecipe()" id="optionEdit" class="item-divider centerContent animated fadeIn" style="background-color:#162e42; color: white;">
-        Editar
-      </div>
-      <div ng-click="deleteRecipe()" id="optionDelete" class="item-divider centerContent animated fadeIn" style="background-color:#ef473a; color: white;" >
-        Eliminar
-      </div> -->
-      <!-- <div class="item item-text-wrap">
-        Esta receta tiene descripcion de poder seguir adelante, logralo.
-      </div>
-    </div> -->
-
-
   </ion-content>
   <div class="float-button">
    <span class="height-fix">

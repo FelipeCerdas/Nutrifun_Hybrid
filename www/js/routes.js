@@ -24,6 +24,15 @@ angular.module('app.routes', [])
 	        authenticate: false
 	    }
   })
+  .state('addRecipe', {
+        url: '/addRecipe',
+        cache: false,
+        templateUrl: 'templates/addRecipe.html',
+        controller: 'AddRecipeCtrl',
+        data: {
+	        authenticate: false
+	    }
+  })
   .state('account', {
         url: '/account',
         cache: false,
@@ -41,41 +50,35 @@ angular.module('app.routes', [])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.home', {
+    url: '/home',
+    cache: false,
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
+        controller: 'HomeCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.search', {
+      url: '/search',
+      cache: false,
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-search': {
+          templateUrl: 'templates/tab-search.html',
+          controller: 'SearchCtrl'
         }
       }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
+  })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.recipes', {
+    url: '/recipes',
+    cache: false,
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-recipes': {
+        templateUrl: 'templates/tab-recipes.html',
+        controller: 'RecipesCtrl'
       }
     }
   });

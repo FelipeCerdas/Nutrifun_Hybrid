@@ -37,7 +37,7 @@ app.service('LoginService', function ($state, $rootScope, UtilService) {
                   // 3 se notifica Ingreso correcto
                   UtilService.showAlert("Exito","Ingreso Exitoso");
                   // 4 se envia a la pantalla de inicio
-                  location.href = "#/tab/dash";
+                  location.href = "#/tab/home";
                 }else{
                   //en caso de ser fail se notifica al usuario el error
                   UtilService.showAlert("Error","Nombre de usuario o contrasena incorrecta");

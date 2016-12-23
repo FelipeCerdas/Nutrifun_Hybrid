@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 
-/*home_page*/
+/*login*/
 .contentBox{
   background-image: url("../img/background.jpg");
 }
@@ -84,6 +84,7 @@
   color: white;
 }
 /*homepage*/
+
 .centerContent{
   text-align: center;
 }
@@ -129,6 +130,7 @@
   -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.20);
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 /*accountpage*/

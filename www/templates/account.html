@@ -6,11 +6,11 @@
   <div class="imgContainer">
     <img src="img/account.png" class="accountLogo">
   </div>
-  <ion-content class="no-padding" style="margin-top:180px;">
+  <ion-content class="no-padding" style="margin-top:180px;" ng-init="getUser()">
     <div class="list" style="padding-left: 30px;padding-right:30px;">
       <label class="itemTrans1 item-input">
         <i class="icon ion-ios-person-outline placeholder-icon1"></i>
-        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Usuario" ng-model="user.username">
+        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Usuario" ng-model="user.userName">
       </label>
       <label class="itemTrans1 item-input">
         <i class="icon ion-person-add placeholder-icon1"></i>
@@ -18,7 +18,7 @@
       </label>
       <label class="itemTrans1 item-input">
         <i class="icon ion-person-add placeholder-icon1"></i>
-        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Apellidos" ng-model="user.lastname">
+        <input style="margin-left: 20px;" class="inputAccount" type="text" placeholder="Apellidos" ng-model="user.lastName">
       </label>
       <label class="itemTrans1 item-input">
         <i class="icon ion-ios-email-outline placeholder-icon1"></i>

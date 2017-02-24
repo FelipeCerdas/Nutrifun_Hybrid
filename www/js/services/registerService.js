@@ -32,6 +32,7 @@ app.service('RegisterService', function ($state, $rootScope, UtilService) {
           });
 
         }
+
       }
       return service;
 });

@@ -1,5 +1,6 @@
 app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilService) {
   //variable objeto que se actualiza con los campos que se completan en la vista
+
   $('#spinner2').hide();
   $scope.user = {
     username : '',
@@ -12,6 +13,7 @@ app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilS
   $scope.goBack = function(){
     window.history.back();
   }
+
   $scope.register = function(){
     //control de espacios vacios
     if($scope.user.username != "" && $scope.user.password != ""
@@ -37,7 +39,7 @@ app.controller('RegisterCtrl', function($scope,$ionicPopup,RegisterService,UtilS
       if(res) {
         RegisterService.registerUser($scope.user);
       } else {
-
+          //no hace nada
       }
     });
   };
